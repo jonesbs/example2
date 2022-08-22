@@ -1,5 +1,5 @@
 import factory
-from books.models import Review
+from movie.models import Review
 
 
 class ReviewFactory(factory.django.DjangoModelFactory):

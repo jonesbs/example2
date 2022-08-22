@@ -1,5 +1,5 @@
 import numpy as np
-from books.models import Movie
+from movie.models import Movie
 from django.core.management.base import BaseCommand
 
 

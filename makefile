@@ -5,6 +5,7 @@ lint:
 	poetry run pre-commit
 
 prepare:
+	pip install poetry
 	poetry shell
 	cp local.env .env
 	poetry install

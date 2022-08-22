@@ -15,7 +15,6 @@ class MovieViewset(viewsets.ModelViewSet):
     filter_backends = (filters.DjangoFilterBackend,)
     filterset_fields = ("producer", "winner")
 
-
 class MovieStatViewset(viewsets.ViewSet):
     def _generate_stat(self):
         query = (
@@ -44,10 +43,9 @@ class MovieStatViewset(viewsets.ViewSet):
                     "followingWin": producer_stat["max_date"][1],
                 }
             )
+        min_list.sort(key=lambda item: item["interval"], reverse=False)
+        max_list.sort(key=lambda item: item["interval"], reverse=True)
         return min_list, max_list
-
-    def _order_producer_list(self, list_process, asc_direction=True):
-        pass
 
     def _process_producer(self, producer):
 
@@ -59,7 +57,6 @@ class MovieStatViewset(viewsets.ViewSet):
         interval_winners = []
         interval_winners_date = []
         movie_reference_date = None
-
         for movie in movie_start:
             if movie_reference_date is None:
                 movie_reference_date = movie.year
