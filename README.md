@@ -1,6 +1,7 @@
 # Instructions #
 
 To correct installation of the API you need to already installed the pip and python 3
+
 To local installation execute the follow command:
 
 $ make prepare
