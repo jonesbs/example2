@@ -26,4 +26,4 @@ The next endpoint accept methods: GET, POST, PUT, PATCH, DELETE and accept query
 All methods http://localhost:8000/movie/
 
 Do not forget add slash on final path to not return 404
-All endpoints have 5 seconds of the cache 
+No endpoints has access control or any kind of authentication process
