@@ -6,7 +6,7 @@ To local installation execute the follow command:
 $ make prepare
 
 To import CSV file you need add a file with the name "movielist.csv" at same folder together with this README file:
-The CSV file need to be separated by ";" character.
+The fields need to be separated by ";" character.
 
 $ make import
 
