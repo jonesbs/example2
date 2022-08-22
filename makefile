@@ -6,7 +6,6 @@ lint:
 
 prepare:
 	pip install poetry
-	poetry shell
 	cp local.env .env
 	poetry install
 	poetry run python exercise/manage.py migrate
